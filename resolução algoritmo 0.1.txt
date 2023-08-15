@@ -71,6 +71,11 @@
 3: pedir a taxa dos juros
 4: faça:
 4.1: divida o valor do juros por 100 para dar o valor decimal do juros
+
+10- Algoritmo de cálculo de média ponderada: um algoritmo que calcula a média ponderada de uma lista de números com base nos pesos fornecidos.
+
+1: leia lista de números
+2:
 4.2: multiplique o valor decimal +1 pelo valor do capital 
 5: faça:
 5.1: resultado = valor da multiplicação elevado ao tempo
