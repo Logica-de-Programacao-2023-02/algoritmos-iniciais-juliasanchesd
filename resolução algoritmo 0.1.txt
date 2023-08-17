@@ -71,12 +71,20 @@
 3: pedir a taxa dos juros
 4: faça:
 4.1: divida o valor do juros por 100 para dar o valor decimal do juros
-
-10- Algoritmo de cálculo de média ponderada: um algoritmo que calcula a média ponderada de uma lista de números com base nos pesos fornecidos.
-
-1: leia lista de números
-2:
 4.2: multiplique o valor decimal +1 pelo valor do capital 
 5: faça:
 5.1: resultado = valor da multiplicação elevado ao tempo
 6: escrever resultado 
+
+10- Algoritmo de cálculo de média ponderada: um algoritmo que calcula a média ponderada de uma lista de números com base nos pesos fornecidos.
+
+1: leia lista de números e seus respectivos pesos 
+2: inicializar a variável total_peso com 1 e a variável produto_soma com 1
+3: multiplique cada número por seus respectivos pesos
+4: adicione o produto de cada número na variável produto_soma
+5: adicione cada peso do número a variável total_peso
+6: se a variável total_peso for igual a zero, pare e mostre um erro
+7: senão faça:
+7.1: resultado = produto_soma / total_peso
+8: escrever resultado
+
