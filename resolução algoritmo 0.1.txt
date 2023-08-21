@@ -52,11 +52,14 @@
 7- Algoritmo de verificação de número primo: um algoritmo que verifica se um número é primo, ou seja, se é divisível apenas por 1 e por ele mesmo.
 
 1: leia o número 
-2: para cada número entre 2 e ele mesmo faça:
-3: se o resto da divisão for = 0 
-3.1: então o número não é primo
-4: senão 
-4.1: então o número é primo 
+2: para cada número entre 2 e x-1, faça: 
+3: se o resto da divisão entre x e o número for 0, então:
+4: escreva X não é primo
+5: fim
+6: fim-se
+7: fim-para
+8: escreva X é primo
+9: fim 
 
 8- Algoritmo de cálculo de área de um triângulo: um algoritmo que calcula a área de um triângulo com base na base e altura fornecidas.
 
@@ -66,25 +69,24 @@
 
 9- Algoritmo de cálculo de juros compostos: um algoritmo que calcula o montante de dinheiro após um período de tempo com juros compostos.
 
-1: pedir o valor do capital
-2: pedir o período de tempo em anos
-3: pedir a taxa dos juros
-4: faça:
-4.1: divida o valor do juros por 100 para dar o valor decimal do juros
-4.2: multiplique o valor decimal +1 pelo valor do capital 
-5: faça:
-5.1: resultado = valor da multiplicação elevado ao tempo
-6: escrever resultado 
+1: ler capital
+2: ler taxa_juros
+3: ler tempo
+4: x = 1 + taxa_juros
+5: para cada número entre 1 e tempo, faça:
+6: x = x * x 
+7: M = capital * x
+8: escreva M 
 
 10- Algoritmo de cálculo de média ponderada: um algoritmo que calcula a média ponderada de uma lista de números com base nos pesos fornecidos.
 
-1: leia lista de números e seus respectivos pesos 
-2: inicializar a variável total_peso com 1 e a variável produto_soma com 1
-3: multiplique cada número por seus respectivos pesos
-4: adicione o produto de cada número na variável produto_soma
-5: adicione cada peso do número a variável total_peso
-6: se a variável total_peso for igual a zero, pare e mostre um erro
-7: senão faça:
-7.1: resultado = produto_soma / total_peso
-8: escrever resultado
-
+1: leia lista_valores
+2: ler lista_pesos
+3: var soma = 0
+4: para cada número da lista_valores, faça:
+5: soma = soma + (numero * peso_respectivo)
+6: var soma_peso = 0
+7: para cada número da lista_peso, faça: 
+8: soma_peso = soma_peso + numero 
+9: media = soma / soma_peso
+10: escreva media 
