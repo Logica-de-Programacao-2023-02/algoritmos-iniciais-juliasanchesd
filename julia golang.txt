@@ -1,0 +1,66 @@
+1 - Faça um algoritmo que leia o nome, a idade e o peso de uma pessoa e imprima esses
+valores na tela.
+
+package main
+
+import "fmt"
+
+func main() {
+	var name string
+	fmt.Print("Qual seu nome?")
+	fmt.Scan(&name)
+	var idade int
+	fmt.Print("Qual sua idade?")
+	fmt.Scan(&idade)
+	var peso int
+	fmt.Print("Qual seu peso?")
+	fmt.Scan(&peso)
+
+	fmt.Println("Seu nome é", name)
+	fmt.Println("Sua idade é", idade)
+	fmt.Println("Seu peso é", peso)
+}
+
+2- Faça um algoritmo que calcule a área de um retângulo com base e altura informados
+pelo usuário.
+
+package main
+
+import "fmt"
+
+func main() {
+	var base int
+	fmt.Print("Qual a base?")
+	fmt.Scan(&base)
+	var altura int
+	fmt.Print("Qual a altura?")
+	fmt.Scan(&altura)
+
+	var area int
+	area = base * altura
+
+	fmt.Println("A área é", area)
+}
+
+3- Faça um algoritmo que calcule o volume de uma caixa com base, altura e profundidade
+informados pelo usuário.
+package main
+
+import "fmt"
+
+func main() {
+	var base int
+	fmt.Print("Qual a base?")
+	fmt.Scan(&base)
+	var altura int
+	fmt.Print("Qual a altura?")
+	fmt.Scan(&altura)
+	var profundidade int
+	fmt.Print("Qual a profundidade?")
+	fmt.Scan(&profundidade)
+
+	var volume int
+	volume = base * altura * profundidade
+
+	fmt.Print("O volume é ", volume)
+}
